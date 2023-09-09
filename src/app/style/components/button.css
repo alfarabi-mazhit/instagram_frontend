@@ -1,0 +1,26 @@
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 34px;
+  font-weight: 600;
+  font-size: 14px;
+  transition: 0.2s;
+  cursor: pointer;
+  padding: 6px 24px;
+}
+.button-bordered {
+  border-color: transparent;
+  border-radius: 8px;
+  background: #0095f6;
+  color: #fff;
+  font-weight: 600;
+  font-size: 14px;
+}
+.button-bordered > div {
+  display: flex;
+  column-gap: 8px;
+}
+.button-bordered:active {
+  background: #00568f;
+}

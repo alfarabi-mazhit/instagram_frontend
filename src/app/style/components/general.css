@@ -1,0 +1,38 @@
+.standard-body {
+  width: 935px;
+  min-height: 850px;
+  margin: 0 auto;
+}
+.align-items-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.margin-center {
+  display: flex;
+  margin: 0 auto;
+}
+
+.line-body {
+  display: flex;
+  height: 15px;
+  justify-content: center;
+  align-items: center;
+  column-gap: 18px;
+}
+.line {
+  width: 100%;
+  height: 1px;
+  border-bottom: 1px solid #dbdbdb;
+}
+.line-text {
+  color: #737373;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.visible-link {
+  color: #00376b;
+  cursor: pointer;
+}

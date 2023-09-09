@@ -1,0 +1,16 @@
+input {
+  display: flex;
+  height: 36px;
+  width: 100%;
+  box-sizing: border-box;
+  border-radius: 3px;
+  border: 1px solid #dbdbdb;
+  background: #fafafa;
+  outline: none;
+  padding: 0 8px;
+  margin-bottom: 8px;
+}
+/* 
+input + input {
+  margin-top: 8px;
+} */

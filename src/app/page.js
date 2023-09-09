@@ -1,33 +1,24 @@
-import FullName from "../components/test";
-import Image from "next/image";
-import styles from "./page.module.css";
+// "use client";
+// import { useState } from "react";
+
+import NavigationHeader from "@/components/global/navigation-header";
+import UserProfile from "@/components/profile";
+import Footer from "@/components/global/footer";
 
 export default function Home() {
+  // const [val, setVal] = useState(0);
+  // const changeVal = (newValue) => {
+  //   setVal(newValue);
+  // };
   return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Hello, &nbsp;
-          <FullName/>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          ></a>
-        </div>
-      </div>
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
+    <main>
+      {/* {val === 0 && <SignIn changeVal={changeVal} />}
+      {val === 1 && <SignUp changeVal={changeVal} />}
+      <Footer /> */}
+
+      <NavigationHeader />
+      <UserProfile />
+      <Footer />
     </main>
   );
 }
