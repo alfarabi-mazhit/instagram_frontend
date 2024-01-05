@@ -1,0 +1,16 @@
+.add-comment{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 6px;
+    min-height: 52px;
+    max-height: 72px;
+    border-top: 1px solid #dfdfdf;
+}
+.add-comment>div{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    gap: 10px;
+
+}

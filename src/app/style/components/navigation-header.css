@@ -3,12 +3,13 @@ header {
   display: flex;
   border-bottom: 1px solid #dbdbdb;
   width: 100%;
-  z-index: 1000;
+  z-index: 10;
   top: 0;
   background-color: #fff;
 }
 .header-inner {
   display: flex;
+  max-width: 935px;
   width: 935px;
   height: 36px;
   margin: 9px auto;
@@ -25,7 +26,6 @@ header {
 
 .logo {
   height: 100%;
-  /* padding-top: 7px; */
 }
 .logo img {
   height: 100%;
@@ -34,10 +34,9 @@ header {
 .search {
   padding-top: 4px;
   padding-bottom: 4px;
-}
-.search-form {
   position: relative;
 }
+
 .search-input-placeholder {
   position: absolute;
   width: 20px;
@@ -56,4 +55,12 @@ header {
 .search-input::placeholder {
   text-align: center;
   color: #8e8e8e;
+}
+
+@media (max-width: 935px) {
+  .header-inner {
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
 }

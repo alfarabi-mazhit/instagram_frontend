@@ -4,7 +4,11 @@
 @import url("style/components/footer.css");
 @import url("style/components/button.css");
 @import url("style/components/input.css");
-@import url("style/components/post.css");
+@import url("style/components/grid-post.css");
 @import url("style/components/story.css");
+@import url("style/components/modal.css");
+@import url("style/components/icon.css");
+@import url("style/components/comment.css");
+@import url("style/components/feed.css");
 @import url("style/pages/auth.css");
 @import url("style/pages/profile.css");

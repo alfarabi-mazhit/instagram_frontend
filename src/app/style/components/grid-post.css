@@ -1,10 +1,11 @@
-.posts {
-  display: flex;
-  flex-wrap: wrap;
+.grid-posts {
+  display: grid;
   column-gap: 4px;
   row-gap: 4px;
+  grid-template-columns: repeat(auto-fill, 309px);
+  justify-content: center;
 }
-.post {
+.grid-post {
   border: 0.1px solid #dfdfdf;
   width: 309px;
   height: 309px;
@@ -14,8 +15,8 @@
   justify-content: center;
   position: relative;
 }
-.post img {
-  object-fit: cover;
+.grid-post > img {
+  object-fit: none;
 }
 
 .hovering-post {
@@ -30,7 +31,7 @@
   font-size: 20px;
   user-select: none;
 }
-.post:hover .hovering-post {
+.grid-post:hover .hovering-post {
   display: flex;
 }
 .hovering-post-details {
@@ -41,7 +42,17 @@
   display: flex;
   align-items: flex-end;
   column-gap: 10px;
+  font-size: 19px;
+  font-weight: 600;
 }
 .hovering-post-details > div img {
-    width: 24px;
+  width: 20px;
+}
+
+
+@media (max-width: 935px) {
+  .grid-posts {
+    margin: 0 auto;
+    max-width: 700px;
+  }
 }

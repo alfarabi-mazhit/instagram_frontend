@@ -1,21 +1,29 @@
 .body-header {
   display: flex;
   align-items: center;
-  padding: 73px 0px 44px 0px;
+  padding: 18px 0px 44px;
+  column-gap: 110px;
+  padding-left: 71px;
 }
 
 .profile-photo {
-  padding: 0px 101px 0px 71px;
   position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 170px;
+  height: 170px;
 }
 .profile-photo img {
-  width: 150px;
+  width: calc(100% - 10px);
+  height: calc(100% - 10px);
   border-radius: 100%;
   border: 1px solid #dfdfdf;
 }
 
 .profile-description-header {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   padding: 14px 0px;
   font-size: 28px;
@@ -37,11 +45,10 @@
   margin-right: 40px;
   font-size: 18px;
 }
-.profile-activity > div > div {
+.profile-numbers {
   font-weight: 600;
   margin-right: 5px;
 }
-
 .profile-name {
   font-weight: 600;
   font-size: 16px;
@@ -50,12 +57,6 @@
 
 .profile-about {
   line-height: normal;
-}
-
-.highlights {
-  height: 174px;
-  /* border-top: 1px solid #dfdfdf; */
-  border-bottom: 1px solid #dfdfdf;
 }
 
 #user-profile-navigation {
@@ -76,6 +77,8 @@
   letter-spacing: 1px;
   color: rgb(115, 115, 115);
   user-select: none;
+  font-size: 12px;
+  cursor: pointer;
 }
 .selector svg {
   color: rgb(115, 115, 115);
@@ -88,4 +91,12 @@
 }
 .selector.selected svg {
   color: black;
+}
+
+@media (max-width: 935px) {
+  .body-header {
+    padding-left: 10px;
+    column-gap: 50px;
+    justify-content: center;
+  }
 }

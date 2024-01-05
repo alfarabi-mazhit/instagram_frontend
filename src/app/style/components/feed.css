@@ -1,0 +1,18 @@
+.feed{
+    width: 614px;
+    margin-top: 28px;
+    margin-right: 28px;
+}
+.feed-post{
+    margin-bottom: 24px;
+    border: 1px solid #dbdbdb;
+}
+.feed-post img{
+    width: 100%;
+    height: 100%;
+}
+
+.suggestions{
+    width: 293px;
+    margin-top: 28px;
+}
